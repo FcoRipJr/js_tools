@@ -1,0 +1,91 @@
+{
+    "navbar": {
+        "title": "FERRAMENTAS JS",
+        "home": "Início",
+        "image_colors": "Cores da Imagem",
+        "product_cost": "Custo de Produto",
+        "power_cost": "Custo de Energia",
+        "csv_to_json": "CSV para JSON",
+        "json_to_csv": "JSON para CSV"
+    },
+    "footer": {
+        "title": "FERRAMENTAS JS.",
+        "description": "Todos os direitos reservados."
+    },
+    "breadcrumbs": {
+    },
+    "home": {
+        "title": "Bem-vindo!",
+        "description": "Vá ao menu."
+    },
+    "image_colors" : {
+        "title": "Cores da Imagem",
+        "limit": "Limite",
+        "threshold": "Limiar",
+        "tolerance": "Tolerância",
+        "step": "Step",
+        "ignore_range": "Ignorar entre",
+        "upload": "Upload",
+        "process": "Processar",
+        "detected_colors": "Cores Detectadas",
+        "original": "Original",
+        "new": "Nova",
+        "set_variation": "Aplicar Variação",
+        "random_variation": "Variação Aleatória",
+        "restore": "Restaurar",
+        "download": "Download"
+    },
+    "product_cost" : {
+        "title": "Custo de Produto",
+        "power_title": "Energia",
+        "energia_valor": "R$ KWH",
+        "energia_consumo": "Consumo/h",
+        "energia_custo_hora": "R$ Custo/h",
+        "material_title": "Material",
+        "material_valor": "R$",
+        "material_peso_total": "Peso",
+        "material_custo_g": "R$",
+        "others_title": "Outros",
+        "percent_perda": "% Perda",
+        "percent_lucro": "% Lucro",
+        "pintura_custo": "R$ Pintura",
+        "outros_custos": "R$ Outros",
+        "production_title": "Produção",
+        "producao_tempo": "Tempo",
+        "producao_material": "Material",
+        "cost_power": "R$ Energia",
+        "cost_material": "R$ Material",
+        "cost_base": "R$ Base",
+        "cost_loss_power": "R$ Perda Energia",
+        "cost_loss_material": "R$ Perda Material",
+        "cost_loss_base": "R$ Perda Base",
+        "cost_total": "R$ Total",
+        "profit_base": "R$ Lucro Base",
+        "profit_total": "R$ Lucro Total",
+        "cost_paint": "R$ Pintura",
+        "cost_others": "R$ Outros",
+        "final_base": "R$ Final Base",
+        "final_total": "R$ Final Total"
+    },
+    "power_cost" : {
+        "title": "Custo de Energia",
+        "power_title": "Energia",
+        "kwh_cost": "R$ KWH",
+        "consumption_hour": "Consumo/h",
+        "time": "Tempo",
+        "cost_hour": "R$ Custo/h",
+        "total_cost": "R$ Custo Total"
+    },
+    "csv_to_json" : {
+        "title": "CSV para JSON",
+        "upload_csv": "Upload CSV",
+        "separator": "Separador",
+        "convert_csv": "Converter CSV"
+    },
+    "json_to_csv" : {
+        "title": "JSON para CSV",
+        "upload_json": "Upload JSON",
+        "separator": "Separador",
+        "convert_json": "Converter JSON"
+    }
+}

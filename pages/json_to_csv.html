@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="json_to_csv.title">JSON to CSV</title>
+    
+    <link rel="stylesheet" href="../vendors/coloris/css/coloris.min.css"/>
+    <script src="../vendors/coloris/js/coloris.min.js"></script>
+    
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/json_to_csv.css">
+    
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <div id="wrapper">
+
+        <div class="container my-4" id="main-container">
+            <h2 class="text-center mb-4" data-i18n="json_to_csv.title">JSON to CSV</h2>
+
+            <div class="mb-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="jsonInput" class="form-label"> <span data-i18n="json_to_csv.upload_json">Upload JSON</span>: </label>
+                        <input type="file" id="jsonInput" class="form-control" accept=".json" required>
+                    </div>
+                    <div class="col-sm-1">
+                        <label for="csv_separator" class="form-label"> <span data-i18n="json_to_csv.separator">Separator</span> </label>
+                        <input type="text" maxlength="1" minlength="1" id="csv_separator" class="form-control" value="," required>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <label for="" class="form-label">&nbsp;</label>
+                        <button id="btn_process" type="button" class="btn btn-primary w-100" onclick="convert_json()"><span  data-i18n="json_to_csv.convert_json">Convert JSON</span> <i class="bi bi-arrow-left-right"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" id="div_output">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/json_to_csv.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',(event)=>{
+            init_page()
+        })
+    </script>
+
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

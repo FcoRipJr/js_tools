@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="product_cost.title">Product Costs</title>
+    
+    <link rel="stylesheet" href="../vendors/coloris/css/coloris.min.css"/>
+    <script src="../vendors/coloris/js/coloris.min.js"></script>
+    
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/product_cost.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <div id="wrapper">
+
+        <div class="container my-4" id="main-container">
+            <h2 class="text-center mb-4" data-i18n="product_cost.title">Product Costs</h2>
+
+            <div class="mb-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4><span data-i18n="product_cost.power_title">Power</span> <i class="bi bi-lightning-fill"></i></h4>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="energia_valor" class="form-label"><span data-i18n="product_cost.energia_valor"> $ KWH</span>:</label>
+                                <input type="number" id="energia_valor" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="energia_consumo" class="form-label"><span data-i18n="product_cost.energia_consumo"> Consumption/h</span>:</label>
+                                <input type="number" id="energia_consumo" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="energia_custo_hora" class="form-label"><span data-i18n="product_cost.energia_custo_hora"> $ Cost/h</span>:</label>
+                                <input type="number" id="energia_custo_hora" class="form-control"  min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4><span data-i18n="product_cost.material_title">Material</span> <i class="bi bi-boxes"></i></h4>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="material_valor" class="form-label"><span data-i18n="product_cost.material_valor"> $</span>:</label>
+                                <input type="number" id="material_valor" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="material_peso_total" class="form-label"><span data-i18n="product_cost.material_peso_total"> Weight</span>(g):</label>
+                                <input type="number" id="material_peso_total" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="material_custo_g" class="form-label"><span data-i18n="product_cost.material_custo_g"> $</span> g:</label>
+                                <input type="number" id="material_custo_g" class="form-control"  min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <h4><span data-i18n="product_cost.others_title">Others</span> <i class="bi bi-tools"></i></h4>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="percent_perda" class="form-label"><span data-i18n="product_cost.percent_perda">% Loss</span>:</label>
+                                <input type="number" id="percent_perda" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="percent_lucro" class="form-label"><span data-i18n="product_cost.percent_lucro">% Profit</span>:</label>
+                                <input type="number" id="percent_lucro" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="pintura_custo" class="form-label"><span data-i18n="product_cost.pintura_custo">R$ Painting</span>:</label>
+                                <input type="number" id="pintura_custo" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="outros_custos" class="form-label"><span data-i18n="product_cost.outros_custos">R$ Others</span>:</label>
+                                <input type="number" id="outros_custos" class="form-control"  min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <h4><span data-i18n="product_cost.production_title">Production</span> <i class="bi bi-ui-radios"></i></h4>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="producao_tempo" class="form-label"><span data-i18n="product_cost.producao_tempo">Time</span>(h):</label>
+                                <input type="number" id="producao_tempo" class="form-control"  min="0">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="producao_material" class="form-label"><span data-i18n="product_cost.producao_material">Material</span>(g):</label>
+                                <input type="number" id="producao_material" class="form-control"  min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="row" id="div_valores"></div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/product_cost.js"></script>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded',(event)=>{
+            set_inputs_from_vars()
+            init_page()
+        })
+
+    </script>
+
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

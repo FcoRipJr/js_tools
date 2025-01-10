@@ -1,0 +1,91 @@
+{
+    "navbar": {
+        "title": "JS TOOLS",
+        "home": "Home",
+        "image_colors": "Image Colors",
+        "product_cost": "Product Costs",
+        "power_cost": "Power Costs",
+        "csv_to_json": "CSV to JSON",
+        "json_to_csv": "JSON to CSV"
+    },
+    "footer": {
+        "title": "JS TOOLS.",
+        "description": "All rights reserved."
+    },
+    "breadcrumbs": {
+    },
+    "home": {
+        "title": "Welcome!",
+        "description": "Go to menu."
+    },
+    "image_colors" : {
+        "title": "Image Colors",
+        "limit": "Limit",
+        "threshold": "Threshold",
+        "tolerance": "Tolerance",
+        "step": "Step",
+        "ignore_range": "Ignore Range",
+        "upload": "Upload",
+        "process": "Process",
+        "detected_colors": "Detected Colors",
+        "original": "Original",
+        "new": "New",
+        "set_variation": "Set Variation",
+        "random_variation": "Random Variation",
+        "restore": "Restore",
+        "download": "Download"
+    },
+    "product_cost" : {
+        "title": "Product Costs",
+        "power_title": "Power",
+        "energia_valor": "$ KWH",
+        "energia_consumo": "Consumption/h",
+        "energia_custo_hora": "$ Cost/h",
+        "material_title": "Material",
+        "material_valor": "$",
+        "material_peso_total": "Weight",
+        "material_custo_g": "$",
+        "others_title": "Others",
+        "percent_perda": "% Loss",
+        "percent_lucro": "% Profit",
+        "pintura_custo": "$ Painting",
+        "outros_custos": "$ Others",
+        "production_title": "Production",
+        "producao_tempo": "Time",
+        "producao_material": "Material",
+        "cost_power": "$ Power",
+        "cost_material": "$ Material",
+        "cost_base": "$ Base",
+        "cost_loss_power": "$ Loss Power",
+        "cost_loss_material": "$ Loss Material",
+        "cost_loss_base": "$ Loss Base",
+        "cost_total": "$ Total",
+        "profit_base": "$ Profit Base",
+        "profit_total": "$ Profit Total",
+        "cost_paint": "$ Painting",
+        "cost_others": "$ Others",
+        "final_base": "$ Final Base",
+        "final_total": "$ Final Total"
+    },
+    "power_cost" : {
+        "title": "Power Costs",
+        "power_title": "Power",
+        "kwh_cost": "$ KWH",
+        "consumption_hour": "Consumption/h",
+        "time": "Time",
+        "cost_hour": "$ Cost/h",
+        "total_cost": "$ Total Cost"
+    },
+    "csv_to_json" : {
+        "title": "CSV to JSON",
+        "upload_csv": "Upload CSV",
+        "separator": "Separator",
+        "convert_csv": "Convert CSV"
+    },
+    "json_to_csv" : {
+        "title": "JSON to CSV",
+        "upload_json": "Upload JSON",
+        "separator": "Separator",
+        "convert_json": "Convert JSON"
+    }
+}

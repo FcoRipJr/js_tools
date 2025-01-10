@@ -1,0 +1,45 @@
+<nav class="navbar fixed-top dark-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../pages/home.html" data-i18n="navbar.title">JS TOOLS</a>
+        <div>
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="pt-br">Português</option>
+            </select>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <div class="offcanvas offcanvas-end dark-navbar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" data-i18n="navbar.title">JS TOOLS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/home.html" data-i18n="navbar.home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/image_colors.html" data-i18n="navbar.image_colors">Image Colors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/product_cost.html" data-i18n="navbar.product_cost">Product Costs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/power_cost.html" data-i18n="navbar.power_cost">Power Costs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/csv_to_json.html" data-i18n="navbar.csv_to_json">CSV to JSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/json_to_csv.html" data-i18n="navbar.json_to_csv">JSON to CSV</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

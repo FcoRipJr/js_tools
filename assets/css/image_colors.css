@@ -1,0 +1,51 @@
+canvas {
+    display: block;
+    border: 1px solid #000;
+    max-width: 100%;
+    height: auto;
+}
+.accordion-item {
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+}
+.form-label, .form-control, .form-control-color{
+    margin-bottom: 8px;
+}
+.form-label, label.me-2{
+    font-size: small;
+}
+#preview{
+    border:1px solid #dee2e6;
+    padding: 0;
+    height: 76.5px;
+    display:none;
+    justify-content: center;
+    background-color: #0000000d;
+}
+
+.clr-field input {
+    padding-left: 30px !important;
+    font-size: x-small;
+    width: 90px;
+    height: 38px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.clr-field button {
+    width: 22px;
+    height: 22px;
+    left: 5px;
+    right: auto;
+    border-radius: 5px;
+}
+
+.clr-field button {
+    border-radius: 50%;
+}
+
+@media(max-width:768px){
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}

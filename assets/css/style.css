@@ -1,0 +1,131 @@
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--bs-gray-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.dark-navbar{
+    background-color: var(--bs-gray-dark);
+    color: var(--bs-light);
+}
+.navbar-brand {
+    color: var(--bs-light);
+}
+
+.navbar-brand:hover {
+    color: var(--bs-cyan);
+}
+
+.navbar-toggler {
+    background-color: var(--bs-light);
+    border-color: var(--bs-light);
+}
+
+.navbar-toggler:hover{
+    background-color: var(--bs-cyan);
+    border-color: var(--bs-cyan);
+}
+
+.navbar-nav .nav-link{
+    color: var(--bs-light);
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover{
+    color: var(--bs-cyan);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-light);
+    font-weight: bolder;
+}
+
+body{
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+.menu-card{
+    padding: .5rem 3rem;
+}
+
+#wrapper{
+    margin-top: 60px !important;
+    max-height: calc(100vh - 120px);
+    overflow-x: auto;
+}
+
+#wrapper::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: var(--bs-dark);
+
+}
+
+#wrapper::-webkit-scrollbar-thumb{
+    background: var(--bs-light);
+}
+
+.clr-field input {
+    padding-left: 30px !important;
+    font-size: x-small;
+    width: 90px;
+    height: 38px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.clr-field button {
+    width: 22px;
+    height: 22px;
+    left: 5px;
+    right: auto;
+    border-radius: 5px;
+}
+
+.clr-field button {
+    border-radius: 50%;
+}
+
+#language-switcher {
+    text-align: right;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--bs-light);
+}
+
+#language-switcher:hover {
+    color: var(--bs-cyan);
+}
+
+#language-switcher option{
+    background: var(--bs-secondary);
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu a .card{
+    box-shadow: -2px 3px 7px 0px #a5a5a5;
+}
+
+#menu a .card:hover{
+    box-shadow: inset 0px 0px 20px 0px #000000;
+    border: none;
+}
+
+@media(max-width:768px){
+    #wrapper{
+        max-height: calc(100vh - 160px);
+    }
+
+    .menu-card{
+        padding: .5rem 1rem;
+    }
+}
