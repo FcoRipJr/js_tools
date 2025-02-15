@@ -18,6 +18,10 @@
         "title": "Welcome!",
         "description": "Go to menu."
     },
+    "btns": {
+        "close": "Close",
+        "save": "Save"
+    },
     "image_colors" : {
         "title": "Image Colors",
         "limit": "Limit",
@@ -86,6 +90,15 @@
         "title": "JSON to CSV",
         "upload_json": "Upload JSON",
         "separator": "Separator",
+        "convert_json": "Convert JSON"
+    },
+    "midias" : {
+        "title": "Midias",
+        "set_credentials": "Set Credentials",
+        "api_base": "API Base URL",
+        "client_id": "client_id",
+        "client_secret": "client_secret",
+        "user": "User",
         "convert_json": "Convert JSON"
     }
 }
