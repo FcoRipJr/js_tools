@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="midias.title">Midias</title>
+    
+    <link rel="stylesheet" href="../vendors/coloris/css/coloris.min.css"/>
+    <script src="../vendors/coloris/js/coloris.min.js"></script>
+    
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/midias.css">
+    
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <div id="wrapper">
+
+        <div class="container my-4" id="main-container">
+            <h2 class="text-center mb-4" data-i18n="midias.title">Midias</h2>
+
+            <div class="mb-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="select_user" class="form-label"> <span data-i18n="midias.user">User</span>: </label>
+                        <select type="file" id="select_user" class="form-control" required></select>
+                    </div>
+                    <div class="col-sm-1">
+                        <label for="csv_separator" class="form-label"> <span data-i18n="midias.separator">Separator</span> </label>
+                        <input type="text" maxlength="1" minlength="1" id="csv_separator" class="form-control" value="," required>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <label for="" class="form-label">&nbsp;</label>
+                        <button id="btn_credentials" type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#ModalFullscreen" onclick="open_set_credentials()"><span  data-i18n="midias.set_credentials">Set Credentials</span> <i class="bi bi-pass"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" id="div_output">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal fade" id="ModalFullscreen" tabindex="-1" aria-labelledby="ModalFullscreen">
+        <div id="full_modal" class="modal-dialog modal-fullscreen"></div>
+    </div>
+    <div id="footer"></div>
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/midias.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',(event)=>{
+            // init_page()
+            render_users_options()
+        })
+    </script>
+
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

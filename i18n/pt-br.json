@@ -18,6 +18,10 @@
         "title": "Bem-vindo!",
         "description": "Vá ao menu."
     },
+    "btns": {
+        "close": "Fechar",
+        "save": "Salvar"
+    },
     "image_colors" : {
         "title": "Cores da Imagem",
         "limit": "Limite",
@@ -86,6 +90,15 @@
         "title": "JSON para CSV",
         "upload_json": "Upload JSON",
         "separator": "Separador",
+        "convert_json": "Converter JSON"
+    },
+    "midias" : {
+        "title": "Mídias",
+        "set_credentials": "Definir Credenciais",
+        "api_base": "Base URL Base API",
+        "client_id": "client_id",
+        "client_secret": "client_secret",
+        "user": "Usuário",
         "convert_json": "Converter JSON"
     }
 }
